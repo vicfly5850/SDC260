@@ -1,0 +1,210 @@
+/* background and font */
+
+body {
+  background: linear-gradient(to bottom right, #FDEEF0, #FFFFFF); 
+  font-family: 'Poppins', 'Segoe UI', sans-serif; 
+  margin: 0;
+  padding: 0;
+  color: #4B2E2E; 
+}
+
+/* header styling */
+
+header {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 25px;
+  background-color: #C97A95; 
+  color: #FFFFFF;
+}
+
+/* navigation */
+
+.nav-flex {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+background-color: D88CA0;
+}
+
+.nav-flex li a {
+text-decoration: none;
+color: #FFFFFF;
+padding: 10px 15px;
+display: clock;
+transition: background-color 0.3s ease;
+}
+
+.nav-flex li a: hover {
+background-color: 4B2E2E;
+}
+
+
+/* nav styling from week 3 */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #D88CA0; 
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #B76E84; 
+  color: #FFFFFF;
+}
+
+/* main section */
+
+.main-flex {
+display: flex;
+flex-direction: column;
+gap: 30px
+padding: 20px;
+}
+
+/* week 3 main elements */
+
+main section {
+width: 45%;
+min-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #FFFFFF;
+  border: 1px solid #E0BFC6; 
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+main section h2 {
+  color: #C97A95; 
+}
+
+main section:hover {
+  transform: scale(1.02);
+}
+
+/* table styling */
+
+caption {
+  font-size: 1.04em;
+  color: #B76E84;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+colgroup col:first-child,
+colgroup col:nth-child(3) {
+  background-color: #F8E6EC; /* soft blush */
+}
+
+th, td {
+  border: 1px solid #D8A7B1;
+  padding: 12px;
+  text-align: center;
+}
+
+thead {
+  background-color: #C97A95; /* matches header */
+  color: #FFFFFF;
+}
+
+tfoot {
+  background-color: #F3DDE4; /* light mauve */
+}
+
+/* contact form */
+
+.form-flex {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+input[type="text"]
+input[type="email"]
+textarea {
+padding: 8px;
+border: 1px solid #CCCCCC;
+border-radius: 4px;
+transition: border-color 0.3s ease;
+}
+
+input: focus;
+textarea: focus {
+border-color: #1565C0;
+}
+
+input[type="submit"] {
+background-color: #C97A95;
+color: #FFFFFF;
+border: none;
+padding: 10px;
+border-radius: 4px;
+font-size: 1em;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+background-color: #F3DDE4;
+} 
+
+/* footer styling */
+
+footer {
+  font-size: 0.9em;
+  text-align: center;
+  padding: 15px;
+  background-color: #C97A95; 
+  color: #FFFFFF;
+  margin-top: 40px;
+}
+ /* responsive design */
+
+@media screen and (max-width: 600px) {
+.main-flex {
+flex-direction: column;
+}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+.main-flex {
+flex-direction: column;
+}
+}
+
+@media screen and (min-width: 1025px) {
+.main-flex {
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+}
+
+
+
