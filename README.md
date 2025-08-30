@@ -44,4 +44,4 @@ git clone https://github.com/vicfly5850/SDC260.git
 
 Here’s a preview of the homepage as hosted locally:
 
-![Screenshot of homepage](screenshot.png)
+[Screenshot of homepage](screenshot.png)
